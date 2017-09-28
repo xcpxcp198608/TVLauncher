@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TVLauncher</string>
+
+    <string name="apps">Apps</string>
+    <string name="games">Games</string>
+    <string name="videos">Videos</string>
+    <string name="music">Music</string>
+</resources>

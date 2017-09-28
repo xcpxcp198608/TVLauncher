@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorSelect">#e43714</color>
+    <color name="colorWhite">#ffffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlue1">#09102D</color>
+    <color name="colorBlue2">#152A57</color>
+    <color name="colorBlue3">#09102D</color>
+    <color name="colorBlue4">#000912</color>
+
+    <color name="colorGreen">#00ff00</color>
+    <color name="colorGreen1">#09f409</color>
+    <color name="colorGreen2">#2b600f</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorTransparent1">#11000000</color>
+    <color name="colorTransparent3">#33000000</color>
+    <color name="colorTransparent5">#55000000</color>
+    <color name="colorTransparentWhite1">#11ffffff</color>
+    <color name="colorTransparentWhite3">#33ffffff</color>
+    <color name="colorTransparentWhite5">#55ffffff</color>
+    <color name="colorGray">#ffa1a1a1</color>
+
+    <color name="color1">#7ede10</color>
+    <color name="color2">#364051</color>
+    <color name="color3">#ce6028</color>
+    <color name="color4">#422040</color>
+    <color name="color5">#F40076</color>
+    <color name="color6">#AD7CFF</color>
+    <color name="color7">#5c4dea</color>
+    <color name="color8">#FA625F</color>
+    <color name="color9">#050c45</color>
+    <color name="color10">#C5BD99</color>
+    <color name="color11">#525552</color>
+    <color name="color12">#84CF96</color>
+    <color name="color13">#604d45</color>
+    <color name="color14">#F45249</color>
+    <color name="color15">#1B4A58</color>
+    <color name="color16">#1a0418</color>
+    <color name="color17">#0a061b</color>
+    <color name="color18">#ee011305</color>
+    <color name="color19">#88011305</color>
+
+</resources>

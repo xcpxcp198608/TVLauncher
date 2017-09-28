@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/item_select_bg_shadow" android:state_pressed="true"/>
+    <item android:drawable="@drawable/item_select_bg_shadow" android:state_selected="true"/>
+    <item android:drawable="@drawable/item_select_bg_shadow" android:state_focused="true"/>
+    <item>
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item >
+                <shape android:shape="rectangle">
+                    <corners android:radius="5dp"/>
+                    <stroke android:color="#3d3838" android:width="1dp"/>
+                </shape>
+            </item>
+            <item android:left="1dp"
+                android:right="1dp"
+                android:top="1dp"
+                android:bottom="1dp">
+                <shape>
+                    <gradient android:startColor="#aa3c0473"
+                        android:endColor="#aa80093c"/>
+                    <corners android:radius="5dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>
+    -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@drawable/item_focus_bg_light" android:state_pressed="true"/>
+<item android:drawable="@drawable/item_focus_bg_light" android:state_selected="true"/>
+<item android:drawable="@drawable/item_focus_bg_light" android:state_focused="true"/>
+    <item>
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item android:top="5dp"
+                android:bottom="5dp"
+                android:right="5dp"
+                android:left="5dp">
+                <shape android:shape="rectangle">
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#aa3c0473"
+                        android:endColor="#aa80093c"/>
+                    <stroke android:color="@color/colorGray" android:width="1dp"/>
+                    <corners android:radius="8dp"/>
+                </shape>
+            </item>
+            <item android:drawable="@color/colorTransparent"></item>
+        </layer-list>
+    </item>
+</selector>
