@@ -44,5 +44,6 @@ public final class F {
         public static final String multimedia = "com.multimedia.mvcastplayer";
         public static final String dangbei = "com.dangbei.zhushou";
         public static final String coolbox = "com.bartbonte.thecoolbox";
+        public static final String leotv = "com.tvata.ott.v2017.leotv";
     }
 }

@@ -41,25 +41,21 @@ public class AppChangeReceiver extends BroadcastReceiver {
                             appInfo.setPackageName(s);
                             appInfo.setLabel(AppUtils.getLabelName(Application.getContext() , s));
                             appInfo.setType(F.app_type.apps);
-//                            if(F.packageName.netflix.equals(s)){
-//                                appInfo.setShortcut(F.app_type.sc1);
-//                            }else if(F.packageName.dangbei.equals(s)){
-//                                appInfo.setShortcut(F.app_type.sc2);
-//                            }else if(F.packageName.coolbox.equals(s)){
-//                                appInfo.setShortcut(F.app_type.sc3);
-//                            }else if(F.packageName.multimedia.equals(s)){
-//                                appInfo.setShortcut(F.app_type.sc4);
-//                            }else if(F.packageName.apt.equals(s)){
-//                                appInfo.setShortcut(F.app_type.sc5);
-//                            }else if(F.packageName.mxplayer.equals(s)){
-//                                appInfo.setShortcut(F.app_type.sc6);
-//                            }else if(F.packageName.rssplayer.equals(s)){
-//                                appInfo.setShortcut(F.app_type.sc7);
-//                            }else if(F.packageName.vplayer.equals(s)){
-//                                appInfo.setShortcut(F.app_type.sc8);
-//                            }else {
+                            if(F.packageName.netflix.equals(s)){
+                                appInfo.setShortcut(F.app_type.sc1);
+                            }else if(F.packageName.dangbei.equals(s)){
+                                appInfo.setShortcut(F.app_type.sc2);
+                            }else if(F.packageName.multimedia.equals(s)){
+                                appInfo.setShortcut(F.app_type.sc3);
+                            }else if(F.packageName.apt.equals(s)){
+                                appInfo.setShortcut(F.app_type.sc4);
+                            }else if(F.packageName.mxplayer.equals(s)){
+                                appInfo.setShortcut(F.app_type.sc5);
+                            }else if(F.packageName.vplayer.equals(s)){
+                                appInfo.setShortcut(F.app_type.sc6);
+                            }else {
                                 appInfo.setShortcut("1");
-//                            }
+                            }
                             if(!appsDao.isExists(appInfo)){
                                 appsDao.insertData(appInfo);
                             }

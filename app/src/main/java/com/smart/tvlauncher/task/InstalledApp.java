@@ -41,35 +41,31 @@ public class InstalledApp implements Runnable {
                 break;
             }
             ResolveInfo resolveInfo = iterator.next();
-            String packageName = resolveInfo.activityInfo.packageName;
-            if(!F.packageName.setting.equals(packageName) && !F.packageName.app.equals(packageName)
-                    && !F.packageName.upgrade1.equals(packageName)){
+            String s = resolveInfo.activityInfo.packageName;
+            if(!F.packageName.setting.equals(s) && !F.packageName.app.equals(s)
+                    && !F.packageName.upgrade1.equals(s)){
                 AppInfo appInfo = new AppInfo();
                 appInfo.setLabel(resolveInfo.loadLabel(packageManager).toString());
-                appInfo.setPackageName(packageName);
+                appInfo.setPackageName(s);
                 appInfo.setType(F.app_type.apps);
-                Logger.d(packageName);
+                Logger.d(s);
                 if(!appsDao.isExists(appInfo)){
-                    Logger.d("! exists" + packageName);
-//                    if(F.packageName.netflix.equals(packageName)){
-//                        appInfo.setShortcut(F.app_type.sc1);
-//                    }else if(F.packageName.dangbei.equals(packageName)){
-//                        appInfo.setShortcut(F.app_type.sc2);
-//                    }else if(F.packageName.coolbox.equals(packageName)){
-//                        appInfo.setShortcut(F.app_type.sc3);
-//                    }else if(F.packageName.multimedia.equals(packageName)){
-//                        appInfo.setShortcut(F.app_type.sc4);
-//                    }else if(F.packageName.apt.equals(packageName)){
-//                        appInfo.setShortcut(F.app_type.sc5);
-//                    }else if(F.packageName.mxplayer.equals(packageName)){
-//                        appInfo.setShortcut(F.app_type.sc6);
-//                    }else if(F.packageName.rssplayer.equals(packageName)){
-//                        appInfo.setShortcut(F.app_type.sc7);
-//                    }else if(F.packageName.vplayer.equals(packageName)){
-//                        appInfo.setShortcut(F.app_type.sc8);
-//                    }else {
+                    Logger.d("! exists" + s);
+                    if(F.packageName.netflix.equals(s)){
+                        appInfo.setShortcut(F.app_type.sc1);
+                    }else if(F.packageName.dangbei.equals(s)){
+                        appInfo.setShortcut(F.app_type.sc2);
+                    }else if(F.packageName.multimedia.equals(s)){
+                        appInfo.setShortcut(F.app_type.sc3);
+                    }else if(F.packageName.apt.equals(s)){
+                        appInfo.setShortcut(F.app_type.sc4);
+                    }else if(F.packageName.mxplayer.equals(s)){
+                        appInfo.setShortcut(F.app_type.sc5);
+                    }else if(F.packageName.vplayer.equals(s)){
+                        appInfo.setShortcut(F.app_type.sc6);
+                    }else {
                         appInfo.setShortcut("1");
-//                    }
+                    }
                     appsDao.insertData(appInfo);
                 }
             }

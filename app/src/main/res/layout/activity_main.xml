@@ -30,24 +30,26 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:padding="5dp"
+                android:padding="10dp"
                 android:elevation="5dp"
                 android:id="@+id/ibt_manual"
                 android:onClick="@{(view) -> onEvent.onClick(view)}"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1.5"
+                android:scaleType="fitCenter"
                 android:background="@drawable/user_manual_bg"
                 android:src="@drawable/icon_book" />
 
             <ImageButton
                 android:elevation="5dp"
-                android:padding="5dp"
+                android:padding="15dp"
                 android:onClick="@{(view) -> onEvent.onClick(view)}"
                 android:id="@+id/ibt_google_play"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="4.5"
+                android:scaleType="fitCenter"
                 android:background="@drawable/play_bg"
                 android:cropToPadding="true"
                 android:src="@drawable/googleplay2" />
@@ -77,19 +79,21 @@
                 android:layout_weight="3">
 
                 <ImageButton
-                    android:padding="5dp"
+                    android:padding="15dp"
                     android:elevation="5dp"
                     android:id="@+id/ibt_browser"
                     android:onClick="@{(view) -> onEvent.onClick(view)}"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:scaleType="fitCenter"
                     android:background="@drawable/browser_bg"
                     android:src="@drawable/browser" />
 
                 <ImageButton
-                    android:padding="5dp"
+                    android:padding="15dp"
                     android:elevation="5dp"
+                    android:scaleType="fitCenter"
                     android:id="@+id/ibt_videos"
                     android:onClick="@{(view) -> onEvent.onClick(view)}"
                     android:layout_width="0dp"
@@ -99,8 +103,9 @@
                     android:src="@drawable/movie" />
 
                 <ImageButton
-                    android:padding="5dp"
+                    android:padding="15dp"
                     android:elevation="5dp"
+                    android:scaleType="fitCenter"
                     android:id="@+id/ibt_apps"
                     android:onClick="@{(view) -> onEvent.onClick(view)}"
                     android:layout_width="0dp"
@@ -129,7 +134,8 @@
                     android:src="@drawable/youtube" />
 
                 <ImageButton
-                    android:padding="5dp"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
                     android:elevation="5dp"
                     android:id="@+id/ibt_music"
                     android:onClick="@{(view) -> onEvent.onClick(view)}"
@@ -247,8 +253,9 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:padding="5dp"
+                android:padding="15dp"
                 android:elevation="5dp"
+                android:scaleType="fitCenter"
                 android:id="@+id/ibt_settings"
                 android:onClick="@{(view) -> onEvent.onClick(view)}"
                 android:layout_width="match_parent"
@@ -258,7 +265,7 @@
                 android:src="@drawable/settings_1_icon" />
 
             <ImageButton
-                android:padding="5dp"
+                android:padding="15dp"
                 android:elevation="5dp"
                 android:id="@+id/ibt_upgrade"
                 android:onClick="@{(view) -> onEvent.onClick(view)}"

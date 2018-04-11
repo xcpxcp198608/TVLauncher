@@ -138,7 +138,10 @@ public class MainActivity extends BaseActivity<IMainActivity , MainPresenter>
                     startActivity(intent);
                     break;
                 case R.id.ibt_settings:
-                    launcherApp(F.packageName.setting);
+                    Intent intent = new Intent();
+                    intent.setClassName("com.android.tv.settings", "com.android.tv.settings.MainSettings");
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
                     break;
                 case R.id.ibt_upgrade:
                     launcherApp(F.packageName.upgrade1);
